@@ -1,20 +1,5 @@
-lista = [
-    1,
-    1,
-    1,
-    5,
-    4,
-    3,
-    4,
-    6,
-    5,
-    5,
-    1,
-    2,
-    4,
-]
-
-const listaCount = {};
+function CalcularModa(lista) {
+    const listaCount = {};
 
 lista.map(
     function (elemento) {
@@ -31,3 +16,5 @@ const listaArray = Object.entries(listaCount).sort(
 );
 
 const moda = listaArray[listaArray.length - 1];
+return moda
+}
